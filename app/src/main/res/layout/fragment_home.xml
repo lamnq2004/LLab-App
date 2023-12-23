@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.home.HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:layout_gravity="center"
+            android:src="@drawable/llab_logo" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hiraginosans_w5"
+            android:text="Welcome, "
+            android:textColor="@color/black"
+            android:textSize="6pt" />
+
+        <TextView
+            android:id="@+id/welcomeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/hiraginosans_w7"
+            android:text="Customer"
+            android:textColor="@color/red"
+            android:textSize="6pt" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:padding="5pt"
+        android:background="@drawable/rounded_background"
+        android:columnCount="3"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/aboutButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/white"
+            android:drawableTop="@drawable/information"
+            android:fontFamily="@font/hiraginosans_w5"
+            android:letterSpacing="0"
+            android:text="About"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="5pt" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/serviceButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/white"
+            android:drawableTop="@drawable/handshake"
+            android:fontFamily="@font/hiraginosans_w5"
+            android:letterSpacing="0"
+            android:text="Service"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="5pt" />
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/shopButton"-->
+<!--            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:background="@color/white"-->
+<!--            android:drawableTop="@drawable/bag"-->
+<!--            android:fontFamily="@font/hiraginosans_w5"-->
+<!--            android:letterSpacing="0"-->
+<!--            android:text="Shop"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="5pt" />-->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/filmButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_columnWeight="1"
+            android:background="@color/white"
+            android:drawableTop="@drawable/film_black"
+            android:fontFamily="@font/hiraginosans_w5"
+            android:letterSpacing="0"
+            android:text="Film Order"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="5pt" />
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/cameraButton"-->
+<!--            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:background="@color/white"-->
+<!--            android:drawableTop="@drawable/camera_black"-->
+<!--            android:fontFamily="@font/hiraginosans_w5"-->
+<!--            android:letterSpacing="0"-->
+<!--            android:text="Camera Repair Order"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="5pt"-->
+<!--            app:elevation="0dp" />-->
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--            android:id="@+id/pointButton"-->
+<!--            style="@style/Widget.MaterialComponents.Button.TextButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:background="@color/white"-->
+<!--            android:drawableTop="@drawable/star_black"-->
+<!--            android:fontFamily="@font/hiraginosans_w5"-->
+<!--            android:letterSpacing="0"-->
+<!--            android:text="Point"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="5pt"-->
+<!--            app:elevation="0dp" />-->
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_background"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Order"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/hiraginosans_w7"
+            android:textSize="7pt"
+            android:textColor="@color/black" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recentOrderRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            tools:itemCount="2" />
+
+        <Button
+            android:id="@+id/allOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Order"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/black"
+            android:fontFamily="@font/hiraginosans_w5"
+            android:letterSpacing="0"
+            android:textAllCaps="false"
+            android:layout_marginBottom="3pt" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="41dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="41dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "23940063404",
+    "project_id": "llab-9d9dd",
+    "storage_bucket": "llab-9d9dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23940063404:android:67a9eee37175fe065dbf09",
+        "android_client_info": {
+          "package_name": "com.example.llabapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARh6OZe5QjqiZ5AKE-SJ787qq25QwRFBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

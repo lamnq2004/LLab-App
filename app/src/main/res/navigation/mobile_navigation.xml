@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.llabapp.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/navigation_to_order"
+            app:destination="@id/navigation_order" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_order"
+        android:name="com.example.llabapp.ui.order.OrderFragment"
+        tools:layout="@layout/fragment_order">
+        <action
+            android:id="@+id/action_navigation_order_to_orderCreateFragment"
+            app:destination="@id/orderCreateFragment" />
+        <action
+            android:id="@+id/action_navigation_order_to_orderUpdateFragment"
+            app:destination="@id/orderUpdateFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.llabapp.ui.notifications.NotificationsFragment"
+        tools:layout="@layout/fragment_notifications">
+        <action
+            android:id="@+id/action_navigation_notification_to_detailedNotification"
+            app:destination="@+id/notificationDetailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_users"
+        android:name="com.example.llabapp.ui.users.UsersFragment"
+        tools:layout="@layout/fragment_users" />
+
+    <fragment
+        android:id="@+id/orderCreateFragment"
+        android:name="com.example.llabapp.ui.order.OrderCreateFragment"
+        tools:layout="@layout/fragment_order_create" />
+
+    <fragment
+        android:id="@+id/orderUpdateFragment"
+        android:name="com.example.llabapp.ui.order.OrderUpdateFragment"
+        tools:layout="@layout/fragment_order_update">
+        <argument
+            android:name="orderId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/notificationDetailFragment"
+        android:name="com.example.llabapp.ui.notifications.NotificationsDetailFragment"
+        tools:layout="@layout/fragment_notification_detail">
+        <argument
+            android:name="notificationId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

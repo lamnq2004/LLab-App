@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LLabApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/red</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorSecondaryVariant">@color/red</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/hiraginosans_w5</item>
+    </style>
+
+    <style name="HiraginoSansTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/hiraginosans_w5</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <!-- Background color of the dialog -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textAppearance">@font/hiraginosans_w5</item>
+        <!-- Title text color -->
+        <item name="android:textColorPrimary">@color/red</item>
+
+        <!-- Message text color -->
+        <item name="android:textColorSecondary">@color/black</item>
+
+        <!-- Button text color -->
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <!-- Positive Button Style -->
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <!-- Negative Button Style -->
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+</resources>
